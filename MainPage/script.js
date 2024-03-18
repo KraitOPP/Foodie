@@ -1,9 +1,9 @@
 let selected_catg;
 const categories_details = [
-    { src: "/Assets/category-images/all-in-one.png", name:"All in One", size:20},
-    { src: "/Assets/category-images/burger.svg", name:"Burger", size:24},
-    { src: "/Assets/category-images/pizza.svg", name:"Pizza", size:20},
-    { src: "/Assets/category-images/fast-food.svg", name:"Fast Food", size:15}
+    { src: "../Assets/category-images/all-in-one.png", name:"All in One", size:20},
+    { src: "../Assets/category-images/burger.svg", name:"Burger", size:24},
+    { src: "../Assets/category-images/pizza.svg", name:"Pizza", size:20},
+    { src: "../Assets/category-images/fast-food.svg", name:"Fast Food", size:15}
 ];
 
 const item_category=[
@@ -363,10 +363,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function opensignin(){
-    window.location.href = "/LoginSignUp/index.html";
+    window.location.href = "../LoginSignUp/index.html";
 }
 function openhome(){
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
 }
 
 const signIn=document.querySelector(".sign-in-box");
