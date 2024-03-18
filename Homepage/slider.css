@@ -1,0 +1,117 @@
+#container {
+	width: 100%;
+	display: grid;
+	place-items: center;    
+} 
+
+.slide{
+    overflow: hidden;
+}
+
+.slide image{
+	height: 100%;
+	width: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+
+#slider-container {
+	height: 350px;
+	width:95vw;
+	max-width: 1400px;
+	position: relative;
+	overflow: hidden;
+	padding: 20px;
+   
+}
+#slider-container .btn {
+	position: absolute;
+	top: calc(50% - 10px);
+	height: 15px;
+	width: 15px;
+	border-left: 8px solid #696969;
+	border-top: 8px solid #696969;
+	cursor: pointer;
+}
+#slider-container .btn:hover {
+	transform: scale(1.2);
+}
+#slider-container .btn.inactive {
+	border-color: #282828
+}
+#slider-container .btn:first-of-type {
+	transform: rotate(-45deg);
+	left: 10px
+}
+#slider-container .btn:last-of-type {
+	transform: rotate(135deg);
+	right: 10px;
+}
+#slider-container #slider {
+	display: flex;
+	height: 100%;
+	transition: all .5s;
+}
+#slider-container #slider .slide {
+	height: 90%;
+	margin: auto 10px;
+	background-color: #b5b5b5;
+	border-radius: 5px;
+	display: grid;
+	place-items: center;
+}
+#slider-container #slider .slide span {
+	color: white;
+	font-size: 60px;
+}
+@media only screen and (min-width: 1100px) {
+   
+	#slider-container #slider .slide {
+		width: calc(2.5% - 20px);
+	}
+}
+@media (max-width:768px){
+    #slider-container #slider{
+        width: 1000%;
+    }
+}
+@media (min-width:769px)
+{
+    #slider-container #slider{
+        width: 1600%;
+    }
+}
+@media only screen and (max-width: 1100px) {
+	#slider-container #slider .slide {
+		width: calc(3.3333333% - 20px);
+	}
+}
+@media only screen and (max-width: 900px) {
+	#slider-container #slider .slide {
+		width: calc(5% - 20px);
+	}
+}
+@media only screen and (max-width: 700px) {
+	#slider-container #slider .slide {
+		width: calc(10% - 20px);
+	}
+    #slider-container #slider{
+        width: 1000% ;
+    }
+}
+@media only screen and (max-width: 400px) {
+	#slider-container #slider .slide {
+		width: calc(10% - 20px);
+		height: 200px;
+	}
+    #slider-container #slider{
+        width: 1000% ;
+		height: 200px;
+    }
+	#container{
+		height: 200px;
+	}
+	#slider-container .btn{
+		top: calc(30%);
+	}
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Foodie</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Homepage/slider.css">
+    <link rel="stylesheet" href="/Homepage/project.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/Assets/favicon.ico">
+
+</head>
+
+<body>
+    <header class="top-nav">
+        <div class="small-device-menu">
+            <div class="menu-top">
+                <div class="menu-icon-box">
+                    <label class="menu-line menu-line1"></label>
+                    <label class="menu-line menu-line2"></label>
+                    <label class="menu-line menu-line3"></label>
+                </div>
+                <img id="icon-img" src="/Homepage/Assets/icon.svg" alt="">
+            </div>
+            <div class="menu-content">
+                <div class="menu-ol">
+                    <ul class="menu-items">
+                        <li class="browse-menu"><a href="#">Browse Menu</a></li>
+                        <li class="sign-in-mobile"><a href="#">Login</a></li>
+                        <li class="sign-in-mobile"><a href="#">Sign Up</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top-nav-box">
+            <div class="top-nav-box1">
+                <div class="icon">
+                    <img src="/Homepage/Assets/icon.svg" id="icon-img" alt="">
+                </div>
+                <div class="search-bar">
+                    <div class="location-search search-box">
+                        <input type="search" class="search location-search-input" name="location-search"
+                            placeholder="Jaipur">
+                        <img src="/Homepage/Assets/location.svg" alt="" class="search-icon icon-svg">
+                    </div>
+                    <div class="food-search search-box">
+                        <input type="search" class="search search-input" name="search-bar" placeholder="Hungry !">
+                        <img src="/Homepage/Assets/icons8-search-50.svg" alt="" class="search-icon icon-svg">
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right-menu">
+                <div class="cart-box btn-box border-right">
+                    <img src="/Homepage/Assets/discount.svg" alt="" class="icon-svg btn-icon">
+                    <p>Deals</p>
+                </div>
+                <div class="browse-menu btn-box border-right">
+                    <img src="/Homepage//Assets/restaurant.svg" alt="" class="icon-svg btn-icon">
+                    <p>Browse Menu</p>
+                </div>
+                <div class="sign-in-box btn-box">
+                    <img src="/Homepage/Assets/sign-in.svg" alt="" class="icon-svg btn-icon">
+                    <p>Sign In</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="container">
+		<div id="slider-container">
+			<span onclick="slideRight()" class="btn"></span>
+			<div id="slider">
+				<div class="slide"><img src="/Homepage/image/slide1.jpg" width="100%" height="100%"></div>
+				<div class="slide"><img src="/Homepage/image/slide2.jpg" width="100%" height="100%"></div>
+				<div class="slide"><img src="/Homepage/image/slide3.jpg" width="100%" height="100%"></div>
+				<div class="slide"><img src="/Homepage/image/slide4.jpg" width="100%" height="100%"></div>
+				<div class="slide"><img src="/Homepage/image/slide5.jpg" width="100%" height="100%"></div>
+				<div class="slide"><img src="/Homepage/image/slide6.jpg" width="100%" height="100%"></div>
+				<div class="slide"><img src="/Homepage/image/food 8.jpg" width="100%" height="100%"></div>
+				<div class="slide"><img src="/Homepage/image/food5.webp" width="100%" height="100%"></div>
+				<div class="slide"><img src="/Homepage/image/food7.jpg" width="100%" height="100%"></div>
+				<div class="slide"><img src="/Homepage/image/food10.jpg" width="100%" height="100%"></div>
+			</div>
+			<span onclick="slideLeft()" class="btn"></span>
+		</div>
+	</div>
+    <div class="video">
+        <video height="400px" autoplay loop muted>
+            <source src="/Homepage/image/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+ <div class="divv2">
+    <div class="div2">
+        <div class="left">
+            <div class="card card1">
+                <div class="heading">
+                    <h3> <i class='bx bxs-bowl-hot'></i></h3>
+                    <h2>2Cr+ Meals</h2>
+                </div>
+                <div class="text">
+                    <p>served and we are not stopping!</p>
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="heading">
+                    <h3> <i class='bx bx-store-alt'></i></h3>
+                    <h2>300+ Stores</h2>
+                </div>
+                <div class="text">
+                    <p>In Mumbai,Delhi NCR,Pune etc.</p>
+                </div>
+            </div>
+            <div class="card card3">
+                <div class="heading">
+                    <h3><i class='bx bxs-timer'></i></h3>
+                    <h2>28 Minutes</h2>
+                </div>
+                <div class="text">
+                    <p>Superfast delievery,we reach you before your hunger goes.</p>
+                </div>
+            </div>
+            <div class="card card4">
+                <div class="heading">
+                    <h3><i class='bx bx-star' ></i></h3>
+                    <h2>4.3 <i class='bx bxs-star bx-tada bx-rotate-90' id="star" ></i></h2>
+                </div>
+                <div class="text">
+                    <p>rated & 11000+ 5 star reviews that keep us motivated.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+           <h1>
+            India's Largest
+           </h1>
+           <h2>Dhakad Meals Brand</h2>
+           <p>Irresitible meals in </p>
+           <p>All-in-1 meals, Biryanis, Curries, Parathas, Desserts & more delivered piping hot.</p>
+           <div>
+        </div>
+        </div>
+       
+    </div>
+    </div>
+    <div class="divv3">
+        <h1>Order Now</h1>
+    </div>
+    <div class="div3">
+       
+        <div class="images image1">
+        <img src="/Homepage/image/food1.jpg" height="100%" width="100%">
+        </div>
+        <div class="images image2">
+            <img src="/Homepage/image/food2.jpg" height="100%" width="100%">
+        </div>
+        <div class="images image3">
+            <img src="/Homepage/image/food3.jpg" height="100%" width="100%">
+        </div>
+        <div class="images image4">
+            <img src="/Homepage/image/food4.jpg" height="100%" width="100%">
+        </div>
+        <div class="images image5">
+            <img src="/Homepa/Homepage/ge/image/food5.webp" height="100%" width="100%">
+        </div>
+        <div class="images image6">
+            <img src="/Homepage/image/food6.jpg" height="100%" width="100%">
+        </div>
+        <div class="images image7">
+            <img src="/Homepage/image/food7.jpg" height="100%" width="100%">
+        </div>
+        <div class="images image8">
+            <img src="/Homepage/image/food 8.jpg" height="100%" width="100%">
+        </div>
+        <div class="images image9">
+            <img src="/Homepage/image/food9.jpg" height="100%" width="100%">
+        </div>
+        <div class="images image10">
+            <img src="/Homepage/image/food10.jpg" height="100%" width="100%">
+        </div>
+        <div class="images image11">
+            <img src="/Homepage/image/food11.jpg" height="100%" width="100%">
+        </div>
+        <div class="images image12">
+            <img src="/Homepage/image/food12.jpg" height="100%" width="100%">
+        </div>
+       
+    </div>
+    <div class="divv4">
+        <div class ="text">
+             <img src="/Homepage/image/heart.png" height="60px" width="60px">
+             <div class = "font">
+             <h1>
+                Over <span>20L+<br> happy customers</span><br>
+                 and counting...
+             </h1>
+            </div>
+        </div>
+        <div class="boxes">
+        <div class="box box1">
+            <img src="/Homepage/image/eat34.png" height="50%" width="100%">
+            <div class="des">
+            <p>There is something about FOODIE meals that make my mouth watery.</p>
+            <p>-Rohan Mishra</p>
+            </div>
+        </div>
+        <div class="box box2">
+            <img src="/Homepage/image/eat37.png" height="50%" width="100%">
+            <div class="des">
+            <p>The food is delicios and delivery is super fast!</p>
+            <p>-Nitika Verma</p>
+            </div>
+        </div>
+        <div class="box box3">
+            <img src="/Homepage/image/eat36.png" height="50%" width="100%">
+            <div class="des">
+            <p>I am a pure Desi food lover.Thanks FOODIE</p>
+            <p>-Anamika shah</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="temp"></div>
+    <div class ="divv5">
+    <div class="sub1">
+        <div class="sub">
+        <h1>
+            When in<br>
+             doubt, <br>
+            <span>Order Dhakad!</span> 
+        </h1>
+        <p>
+            Too lazy to cook or bored of ghar ka khana? Tired of scrolling through restaurants or stuck on a concall? Whatever the reason, When In Doubt, Order Desi!
+        </p>
+        <p>
+            From Dal Makhni to Amritsari Chole Chawal to Butter Chicken to Gulab Jamun, we have all of your delicious Desi Meals.
+        </p>
+    </div>
+    </div>
+    <div class="sub2">
+           <div class="subb21">
+              <div>
+                 <img src="/Homepage/image/tasty1.jpg" height="257px" width="200px">
+              </div>
+              <div>
+                <img src="/Homepage/image/tasty2.jpg" height="355px" width="262px">
+              </div>
+           </div>
+           <div class="subb22">
+            <div>
+                <img src="/Homepage/image/tasty3.jpg" height="166px" width="166px">
+             </div>
+             <div>
+               <img src="/Homepage/image/tasty4.jpg" height="200px" width="200px">
+             </div>
+           </div>
+    </div>
+    </div>
+    <div class="temp"></div>
+    <div class="footer">
+        <div class="footer1">
+            <div class="footer1-grid">
+                <div class="footer-list">
+                    <h4>Foodie</h4>
+                    <p><a href="#">About</a></p>
+                    <p><a href="#">Help and Support</a></p>
+                    <p><a href="#">Contact Us</a></p>
+                    <p><a href="#">Delivery Policies</a></p>
+                    <p><a href="#">Privacy Policies</a></p>
+                </div>
+                <div class="footer-list">
+                    <h4>Explore</h4>
+                    <p><a href="#">Offers</a></p>
+                    <p><a href="#">Disclaimers</a></p>
+                    <p><a href="#">Refer and Earn</a></p>
+                    <p><a href="#">Investors</a></p>
+                    <p><a href="#">Vendors</a></p>
+                </div>
+                <div class="footer-list follow-box">
+                    <h4>Follow</h4>
+                    <img class="icon-img btn" src="/Assets/instagram.svg" alt="">
+                    <img class="icon-img btn" src="/Assets/twitter.svg" alt="">
+                    <img class="icon-img btn" src="/Assets/facebook.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <p id="copyright-txt">All Right Reserved &copy;2024 Foodie</p>
+        </div>
+    </div>
+    <script src="/Homepage/script.js"></script>
+    <script src="/Homepage/slider.js"></script>
+</body>
+
+</html>
