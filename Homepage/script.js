@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function opensignin(){
-    window.location.href = "/LoginSignUp/index.html";
+    window.location.href = "LoginSignUp/index.html";
 }
 function openmenupage(){
-    window.location.href = "/MainPage/index.html";
+    window.location.href = "MainPage/index.html";
 }
 
 const signIn=document.querySelector(".sign-in-box");

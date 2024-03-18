@@ -366,7 +366,7 @@ function opensignin(){
     window.location.href = "/LoginSignUp/index.html";
 }
 function openhome(){
-    window.location.href = "/Homepage/project.html";
+    window.location.href = "/index.html";
 }
 
 const signIn=document.querySelector(".sign-in-box");
