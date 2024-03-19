@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function opensignin(){
-    window.location.href = "../LoginSignUp/index.html";
+    window.location.href = "https://kraitopp.github.io/Foodie/LoginSignUp/index.html";
 }
 function openmenupage(){
     window.location.href = "https://kraitopp.github.io/Foodie/MainPage/index.html";
