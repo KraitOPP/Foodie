@@ -3,7 +3,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT;
 const HOST = "192.168.54.63";
 const { ConnectMongoDB } = require("./connection");
 const { CheckforAuthCookie } = require("./middlewares/auth");
@@ -12,12 +12,11 @@ const itemRouter = require("./routes/items");
 // const MapRouter = require("./routes/map");
 
 app.listen(PORT, () => console.log(`Server Running on PORT:${PORT}`));
-ConnectMongoDB("mongodb://localhost:27017/foodie")
+ConnectMongoDB(process.env.MONGO_URL)
   .then(() => console.log("MongoDB Connected Successfully."))
   .catch((err) => console.log("Error Connecting MongoDB", err));
 
-// mongodb://localhost:27017/foodie
-// mongodb+srv://patidarayush7211:a2a2a2a2a2@foodie.z8llkmq.mongodb.net/foodie
+
 
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
